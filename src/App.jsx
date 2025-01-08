@@ -22,6 +22,8 @@ const dates = useRef(null);
 
 useEffect(() => {
 
+  gsap.fromTo('.appear', {opacity: 0, y: 50 }, {opacity: 1, y: 0, duration: 0.5, delay: 1.5});
+
   gsap.fromTo(text1.current, {opacity: 0, scale: 0 }, {opacity: 1, scale: 1 , duration: 0.5, delay: 0});
   gsap.fromTo(text2.current, {opacity: 0, scale: 0 }, {opacity: 1, scale: 1 , duration: 0.5, delay: 0.1});
 
@@ -62,7 +64,7 @@ useEffect(() => {
         <div ref={text2} className="span">Presents</div>
       </div>
 
-      <div className="flex flex-col absolute w-full items-center justify-center h-max gap-1 z-0">
+      <div className="flex flex-col absolute w-full items-center justify-center h-max gap-1 z-0 ">
         <div ref={refLogo1} className="w-[90%] lg:w-[80%] h-auto flex justify-center  "><img src="/images/LogoFill.svg" alt="" className="object-cover" /></div>
         <div ref={refLogo2} className="w-[90%] lg:w-[80%] h-auto flex justify-center  "><img src="/images/LogoNoFill.svg" alt="" className="object-cover" /></div>
         <div ref={refLogo3} className="w-[90%] lg:w-[80%] h-auto flex justify-center  "><img src="/images/LogoNoFill.svg" alt="" className="object-cover" /></div>
@@ -73,11 +75,11 @@ useEffect(() => {
         <div ref={refLogo8} className="w-[90%] lg:w-[80%] h-auto flex justify-center lg:hidden "><img src="/images/LogoNoFill.svg" alt="" className="object-cover" /></div>
      </div>
 
-     <div ref={Laptop} className="absolute h-max w-max z-0"><img src="/images/Laptop2.png" alt="" className="" /></div>
+     <div ref={Laptop} className="absolute h-max w-max z-10 md:top-20"><img src="/images/Laptop2.png" alt="" className="" /></div>
      <a ref={qr} href='https://www.google.com' className="absolute md:flex hidden cursor-pointer h-max w-max origin-bottom bottom-8 left-2 z-0 "><img src="/images/QR.svg" alt="" className="" /></a>
      <div ref={dates} className="absolute md:flex hidden h-max w-max origin-bottom bottom-12 right-2 "><img src="/images/Dates.svg" alt="" className=" w-[250px] md:w-[350px]" /></div>
 
-    <div className="flex flex-col absolute h-max bottom-10 md:hidden z-0">
+    <div className="appear flex flex-col absolute h-max bottom-10 md:hidden z-0 gap-5">
       <a href='https://www.google.com' className=" cursor-pointer h-max w-max origin-bottom bottom-8 left-2 "><img src="/images/QR.svg" alt="" className="" /></a>
       <div ref={dates} className=" h-max w-max origin-bottom bottom-12 right-2 "><img src="/images/Dates.svg" alt="" className=" w-[250px] md:w-[350px]" /></div>
     </div>
