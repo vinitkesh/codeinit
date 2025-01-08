@@ -53,7 +53,7 @@ useEffect(() => {
 , []);
 
   return (
-    <div className="min-h-screen max-h-[130vh] w-screen flex flex-col items-center justify-center bg-neutral-800 relative overflow-clip m-0 p-0">
+    <div className="min-h-screen max-h-[150vh] w-screen flex flex-col items-center justify-center bg-neutral-800 relative overflow-clip m-0 p-0">
       <div className="logo h-max font-mono text-white flex flex-col items-center gap-2 text-xl z-0">
         <img ref={text1} src="/images/CSEALogo.svg " alt=""  className="object-cover h-20 w-20 "/>
         <div ref={text2} className="span font-pixeloperator ">Presents</div>
@@ -83,6 +83,13 @@ useEffect(() => {
 
      <div className="absolute left-5 md:w-[50%] w-[100%] z-0"><img src="/images/code.svg" alt="" className="w-full -z-10 opacity-15" /></div>
 
+      <div className=" md:px-2 px-0 rounded-full md:rounded-none font-pixeloperator text-black bg-[#42CF71] absolute top-0 right-0 flex items-center justify-center">
+        <span className='hidden md:flex'>made with {'<3'} by </span>
+        <a href='https://www.linkedin.com/in/vinitkeshri/' className='hidden md:flex text-green-800 items-start justify-center px-2 '> Vinit </a> 
+        <a href="https://github.com/vinitkesh">
+          <img src="/images/github.svg" alt="" className='h-full' />  
+        </a>
+      </div>
       
     </div>
   );
