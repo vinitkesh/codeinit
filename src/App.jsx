@@ -22,6 +22,8 @@ const dates = useRef(null);
 
 useEffect(() => {
 
+  const formLink = 'https://docs.google.com/forms/d/e/1FAIpQLScxSEV-ADCJ9EIcmSWhBNO8E9m-ko-P4NrHrs1E7j_k-TxfEw/viewform?usp=header';
+
   gsap.fromTo('.appear', {opacity: 0, y: 50 }, {opacity: 1, y: 0, duration: 0.5, delay: 1.5});
 
   gsap.fromTo(text1.current, {opacity: 0, scale: 0 }, {opacity: 1, scale: 1 , duration: 0.5, delay: 0});
@@ -74,9 +76,12 @@ useEffect(() => {
      {/* <a ref={qr} href='https://www.google.com' className="absolute md:flex hidden cursor-pointer h-max w-max origin-bottom bottom-8 left-2 z-0 "><img src="/images/QR.svg" alt="" className="" /></a>
      <div ref={dates} className="absolute md:flex hidden h-max w-max origin-bottom bottom-12 right-2 "><img src="/images/Dates.svg" alt="" className=" w-[250px] md:w-[350px]" /></div> */}
 
-    <div className="appear flex flex-col md:flex-row h-max w-full md:justify-between p-3 bottom-10 items-center z-0 gap-5">
-      <a href='https://www.google.com' className=" cursor-pointer h-max w-max origin-bottom bottom-8 left-2 "><img src="/images/QR.svg" alt="" className="" /></a>
-      <div ref={dates} className=" h-max w-max origin-bottom bottom-12 right-2 "><img src="/images/Dates.svg" alt="" className=" w-[250px] md:w-[350px]" /></div>
+    <div className="appear flex flex-col md:flex-row h-max w-full md:justify-between p-3 bottom-10 items-center z-10 gap-5">
+      <a href={'https://docs.google.com/forms/d/e/1FAIpQLScxSEV-ADCJ9EIcmSWhBNO8E9m-ko-P4NrHrs1E7j_k-TxfEw/viewform?usp=header'} 
+         className=" cursor-pointer hover:-translate-y-1 transition-transform h-max w-max origin-bottom bottom-8 left-2 ">
+        <img src="/images/QR2.svg" alt="" className="" />
+      </a>
+      <div ref={dates} className=" h-max w-max origin-bottom bottom-12 right-2 "><img src="/images/Dates2.svg" alt="" className=" w-[250px] md:w-[350px]" /></div>
     </div>
 
      {/* <div className="bg-[#01FF68] w-full h-8 absolute bottom-0 z-0"></div> */}
