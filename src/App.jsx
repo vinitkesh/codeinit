@@ -82,9 +82,9 @@ useEffect(() => {
     <div className="appear flex flex-col md:flex-row h-max w-full md:justify-between p-3 bottom-10 items-center z-10 gap-5">
       <a href={'https://docs.google.com/forms/d/e/1FAIpQLScxSEV-ADCJ9EIcmSWhBNO8E9m-ko-P4NrHrs1E7j_k-TxfEw/viewform?usp=header'} 
          className=" cursor-pointer hover:-translate-y-1 transition-transform h-max w-max origin-bottom bottom-8 left-2 ">
-        <img src="https://raw.githubusercontent.com/vinitkesh/codeinit/26c7faa6b42fc08320e2bcfd8c714b295c74aed6/public/images/QR2.svg" alt="" className="" />
+        <img src="https://raw.githubusercontent.com/vinitkesh/codeinit/fbf7d5dbf3ee27ef853ec2cb1f28b9086d1c36bf/public/images/QR3.svg" alt="" className="" />
       </a>
-      <div ref={dates} className=" h-max w-max origin-bottom bottom-12 right-2 "><img src="https://raw.githubusercontent.com/vinitkesh/codeinit/833adbae216c774e39572babc620a0b5ad75dfdd/public/images/Dates3.svg" alt="" className=" w-[250px] md:w-[350px]" /></div>
+      <div ref={dates} className=" h-max w-max origin-bottom bottom-12 right-2 "><img src="https://raw.githubusercontent.com/vinitkesh/codeinit/fbf7d5dbf3ee27ef853ec2cb1f28b9086d1c36bf/public/images/Dates4.svg" alt="" className=" w-[250px] md:w-[350px]" /></div>
     </div>
 
      {/* <div className="bg-[#01FF68] w-full h-8 absolute bottom-0 z-0"></div> */}
