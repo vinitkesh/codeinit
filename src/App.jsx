@@ -59,7 +59,7 @@ useEffect(() => {
       <div className="logo h-max font-mono text-white flex flex-col items-center gap-2 text-xl z-0">
       <div className="flex items-center justify-center">
         <img src="https://raw.githubusercontent.com/vinitkesh/codeinit/26c7faa6b42fc08320e2bcfd8c714b295c74aed6/public/images/CSEALogo.svg " alt=""  className="object-cover h-20 w-20 "/>
-        <img src="/images/fosscell.svg " alt=""  className="object-cover h-16 "/>
+        <img src="https://raw.githubusercontent.com/vinitkesh/codeinit/8aeafd5461635d18e60554d4351154496546aa83/public/images/fosscell.svg" alt=""  className="object-cover h-16 "/>
       </div>
       <div  className="span font-pixeloperator ">Presents</div>
       </div>
