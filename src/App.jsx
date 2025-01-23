@@ -22,7 +22,7 @@ const dates = useRef(null);
 
 useEffect(() => {
 
-  const formLink = 'https://docs.google.com/forms/d/e/1FAIpQLScxSEV-ADCJ9EIcmSWhBNO8E9m-ko-P4NrHrs1E7j_k-TxfEw/viewform?usp=header';
+  const formLink = 'https://forms.gle/dpSBVRVi85UaTmDr5';
 
   gsap.fromTo('.appear', {opacity: 0, y: 50 }, {opacity: 1, y: 0, duration: 0.5, delay: 1.5});
 
